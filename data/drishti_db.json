@@ -1,0 +1,262 @@
+{
+  "departments": [
+    {
+      "id": "municipality",
+      "name": "Municipality / Municipal Corporation",
+      "short_name": "Municipality",
+      "head": "Chief Municipal Engineer",
+      "contact": "control@municipality.gov.in",
+      "jurisdiction": "Ward Roads, Inner Streets, Drainage & Sanitation"
+    },
+    {
+      "id": "police",
+      "name": "Traffic Police Department",
+      "short_name": "Traffic Police",
+      "head": "DCP Traffic & Road Safety",
+      "contact": "traffic.safety@police.gov.in",
+      "jurisdiction": "Traffic Hazard Management, Emergency Barricading & Accident Prevention"
+    },
+    {
+      "id": "roads_dev",
+      "name": "Roads & Development Department (PWD)",
+      "short_name": "Roads & Development",
+      "head": "Superintending Engineer (Highways)",
+      "contact": "pwd.roads@state.gov.in",
+      "jurisdiction": "Arterial Roads, State Highways, Flyovers & Major Infrastructure"
+    }
+  ],
+  "potholes": [
+    {
+      "id": "DRISHTI-2026-1042",
+      "road_name": "Outer Ring Road, Near Tech Hub Flyover",
+      "ward": "Ward 7 - South Corridor",
+      "latitude": 12.9279,
+      "longitude": 77.6271,
+      "severity": "Critical",
+      "risk_score": 94,
+      "confidence": 0.965,
+      "estimated_depth_cm": 15.2,
+      "estimated_diameter_cm": 72.0,
+      "reported_by": "Citizen (Pooja Rao)",
+      "reporter_contact": "+91 98450-29182",
+      "reported_at": "2026-10-21T09:30:00Z",
+      "assigned_department": "roads_dev",
+      "status": "in_progress",
+      "priority_zone": "High-Speed Arterial Corridor",
+      "description": "Deep tire-bursting crater on middle lane. Severe water stagnation during rains.",
+      "photo_url": "/sample_images/sample_critical_arterial.jpg",
+      "after_photo_url": null,
+      "contractor": "National Infrastructure Infra Corp",
+      "materials_used": "Bituminous Concrete (Grade 2), Tack Coat",
+      "timeline": [
+        {
+          "step": "Reported",
+          "timestamp": "2026-10-21T09:30:00Z",
+          "note": "Grievance logged via DRISHTI Citizen App"
+        },
+        {
+          "step": "AI Triage & Verification",
+          "timestamp": "2026-10-21T09:31:00Z",
+          "note": "YOLOv11 categorized CRITICAL. Depth: 15.2cm"
+        },
+        {
+          "step": "Department Assigned",
+          "timestamp": "2026-10-21T10:15:00Z",
+          "note": "Auto-routed to Roads & Development Dept"
+        },
+        {
+          "step": "Inspection Completed",
+          "timestamp": "2026-10-21T14:00:00Z",
+          "note": "Field Engineer verified structural base failure"
+        },
+        {
+          "step": "Crew Dispatched",
+          "timestamp": "2026-10-22T08:30:00Z",
+          "note": "Hot-mix asphalt patch team deployed (Truck #KA-04-E-8812)"
+        },
+        {
+          "step": "Repair In-Progress",
+          "timestamp": "2026-10-22T11:00:00Z",
+          "note": "Milling and edge cutting underway"
+        }
+      ]
+    },
+    {
+      "id": "DRISHTI-2026-1088",
+      "road_name": "MG Road, Opp. St. Mary's Convent School",
+      "ward": "Ward 3 - Central Civic",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "severity": "Critical",
+      "risk_score": 96,
+      "confidence": 0.948,
+      "estimated_depth_cm": 13.8,
+      "estimated_diameter_cm": 65.0,
+      "reported_by": "School Administration",
+      "reporter_contact": "+91 97411-88231",
+      "reported_at": "2026-10-22T07:45:00Z",
+      "assigned_department": "police",
+      "status": "dispatched",
+      "priority_zone": "School Zone",
+      "description": "Hazardous cluster right outside school entrance gate. Two school vans suffered rim damage.",
+      "photo_url": "/sample_images/sample_school_zone_hazards.jpg",
+      "after_photo_url": null,
+      "contractor": "Apex Highway Maintenance",
+      "materials_used": "Cold-mix emergency asphalt, retroreflective warning signs",
+      "timeline": [
+        {
+          "step": "Reported",
+          "timestamp": "2026-10-22T07:45:00Z",
+          "note": "Reported as high risk to student transit"
+        },
+        {
+          "step": "AI Triage",
+          "timestamp": "2026-10-22T07:46:00Z",
+          "note": "Flagged CRITICAL with Priority Sensitive Zone Tag"
+        },
+        {
+          "step": "Police Barricading",
+          "timestamp": "2026-10-22T08:20:00Z",
+          "note": "Traffic Police deployed safety cones & diversion signs"
+        },
+        {
+          "step": "Crew Dispatched",
+          "timestamp": "2026-10-22T13:00:00Z",
+          "note": "Emergency repair crew dispatched"
+        }
+      ]
+    },
+    {
+      "id": "DRISHTI-2026-1102",
+      "road_name": "100ft Hospital Access Road, Metro Pillar 184",
+      "ward": "Ward 5 - West End",
+      "latitude": 12.9815,
+      "longitude": 77.5452,
+      "severity": "High",
+      "risk_score": 78,
+      "confidence": 0.925,
+      "estimated_depth_cm": 8.5,
+      "estimated_diameter_cm": 48.0,
+      "reported_by": "Ambulance Driver (Suresh K.)",
+      "reporter_contact": "+91 99002-12443",
+      "reported_at": "2026-10-20T16:10:00Z",
+      "assigned_department": "municipality",
+      "status": "completed",
+      "priority_zone": "Hospital Corridor",
+      "description": "Pothole in ambulance emergency lane causing severe patient discomfort and transport delay.",
+      "photo_url": "/sample_images/sample_high_urban.jpg",
+      "after_photo_url": "/sample_images/sample_medium_suburban.jpg",
+      "contractor": "City Civic Infrastructure Works",
+      "materials_used": "Rapid-setting mastic asphalt, roller compaction",
+      "timeline": [
+        {
+          "step": "Reported",
+          "timestamp": "2026-10-20T16:10:00Z",
+          "note": "Grievance filed for Hospital transit zone"
+        },
+        {
+          "step": "Department Assigned",
+          "timestamp": "2026-10-20T16:40:00Z",
+          "note": "Assigned to Municipality Ward Division"
+        },
+        {
+          "step": "Inspection Completed",
+          "timestamp": "2026-10-21T08:30:00Z",
+          "note": "Emergency hospital corridor fast-track approved"
+        },
+        {
+          "step": "Crew Dispatched",
+          "timestamp": "2026-10-21T10:15:00Z",
+          "note": "Asphalt crew on site"
+        },
+        {
+          "step": "Repaired & Verified",
+          "timestamp": "2026-10-21T17:45:00Z",
+          "note": "Repair certified and road opened for emergency transit"
+        }
+      ]
+    },
+    {
+      "id": "DRISHTI-2026-1145",
+      "road_name": "4th Cross, 2nd Main, Indiranagar Residential",
+      "ward": "Ward 4 - East District",
+      "latitude": 12.9784,
+      "longitude": 77.6408,
+      "severity": "Medium",
+      "risk_score": 45,
+      "confidence": 0.88,
+      "estimated_depth_cm": 4.2,
+      "estimated_diameter_cm": 32.0,
+      "reported_by": "Resident Association",
+      "reporter_contact": "+91 98860-55442",
+      "reported_at": "2026-10-23T11:20:00Z",
+      "assigned_department": "municipality",
+      "status": "inspection",
+      "priority_zone": "Residential Street",
+      "description": "Surface peeling and shallow depression after monsoon drain pipe work.",
+      "photo_url": "/sample_images/sample_medium_suburban.jpg",
+      "after_photo_url": null,
+      "contractor": "Ward 4 Zonal Contractor",
+      "materials_used": "Cold asphalt patch",
+      "timeline": [
+        {
+          "step": "Reported",
+          "timestamp": "2026-10-23T11:20:00Z",
+          "note": "Logged by Resident Welfare President"
+        },
+        {
+          "step": "Department Assigned",
+          "timestamp": "2026-10-23T12:00:00Z",
+          "note": "Assigned to Municipality Zonal Team"
+        },
+        {
+          "step": "Inspection Scheduled",
+          "timestamp": "2026-10-23T15:30:00Z",
+          "note": "Site visit scheduled for tomorrow 10:00 AM"
+        }
+      ]
+    }
+  ],
+  "hotspots": [
+    {
+      "name": "Outer Ring Road - Tech Corridor Junction",
+      "ward": "Ward 7",
+      "latitude": 12.9285,
+      "longitude": 77.628,
+      "risk_level": "CRITICAL",
+      "recurring_count": 8,
+      "last_audited": "2026-10-18",
+      "recommendation": "Full base course reconstruction & stormwater subsurface drainage redesign."
+    },
+    {
+      "name": "MG Road - St. Mary's School Crossing",
+      "ward": "Ward 3",
+      "latitude": 12.9718,
+      "longitude": 77.595,
+      "risk_level": "CRITICAL",
+      "recurring_count": 6,
+      "last_audited": "2026-10-15",
+      "recommendation": "Pedestrian safety raised tabletop crossing with high-durability mastic overlay."
+    },
+    {
+      "name": "Old Airport Road - Wind Tunnel Curve",
+      "ward": "Ward 8",
+      "latitude": 12.956,
+      "longitude": 77.652,
+      "risk_level": "HIGH",
+      "recurring_count": 5,
+      "last_audited": "2026-10-12",
+      "recommendation": "Milling of degraded top layer and installation of geo-grid reinforcement."
+    },
+    {
+      "name": "Hosur Main Road - Silk Board Approach",
+      "ward": "Ward 9",
+      "latitude": 12.9175,
+      "longitude": 77.6235,
+      "risk_level": "CRITICAL",
+      "recurring_count": 11,
+      "last_audited": "2026-10-20",
+      "recommendation": "Heavy vehicle rutting repair. Replace bituminous macadam with micro-surfacing."
+    }
+  ]
+}
